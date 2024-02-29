@@ -7,7 +7,7 @@
 $theme_default_color: if($variant == 'light', $grey-900, $grey-300);
 $theme_purple_color:  if($variant == 'light', $purple-400, $purple-300);
 $theme_pink_color:    if($variant == 'light', $pink-400, $pink-300);
-$theme_red_color:     if($variant == 'light', $red-600, $red-500);
+$theme_red_color:     if($variant == 'light', $red-600, #FD0D2D);
 $theme_orange_color:  if($variant == 'light', $orange-700, $orange-600);
 $theme_yellow_color:  if($variant == 'light', $yellow-700, $yellow-a700);
 $theme_green_color:   if($variant == 'light', $green-500, $green-400);
@@ -38,7 +38,9 @@ $theme_blue_color:    if($variant == 'light', #3684dd, #5294e2);
   // Calculate color brightness according to https://www.w3.org/TR/AERT/#color-contrast
   $brightness: (red($color) * 299 + green($color) * 587 + blue($color) * 114) / 1000;
 
-  @if ($brightness >= 156) {
+  @if ($color == $theme_red_color) {
+    @return black;
+  } @else if ($brightness >= 156) {
     @if ($state == 'primary') { @return rgba(black, 0.87); }
     @if ($state == 'secondary') { @return rgba(black, 0.6); }
     @if ($state == 'disabled') { @return rgba(black, 0.38); }
