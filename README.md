@@ -1,5 +1,7 @@
 ## Cyberpunk-RED specific README
 
+![Cyberpunk RED Theme](red.png?raw=true)
+
 Only the red theme variant has been modified. When you use that, now you'll get
 my custom Cyberpunk RED theme. Everything else works the same.
 
