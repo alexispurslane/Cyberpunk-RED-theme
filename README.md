@@ -1,3 +1,10 @@
+## Cyberpunk-RED specific README
+
+Only the red theme variant has been modified. When you use that, now you'll get
+my custom Cyberpunk RED theme. Everything else works the same.
+
+## Old READMe
+
 ![Graphite](preview.png?raw=true)
 
 ## Requirements
